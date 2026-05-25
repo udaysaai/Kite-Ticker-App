@@ -1,0 +1,6 @@
+build/
+jdk.zip
+__pycache__/
+*.log
+scratch/
+.env
