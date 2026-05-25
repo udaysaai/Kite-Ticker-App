@@ -441,6 +441,7 @@ def main(page: ft.Page):
             
     # Background worker thread for polling Firebase
     def poll_firebase():
+        nonlocal last_timestamp
         while True:
             # Refresh Firebase url dynamically on each iteration from memory state
             current_url = app_state["firebase_url"]
